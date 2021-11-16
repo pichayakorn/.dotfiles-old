@@ -18,7 +18,7 @@ echo "Copying tmuxconf"
 cp .tmux.conf ~/.tmux.conf
 
 # using molokai theme on vim 
-cp -r molokai-master/colors .vim/
+cp -r molokai-master/colors ~/.vim/
 
 echo "Done! : Dont forget to run :PlugInstall in vim"
 
