@@ -1,0 +1,13 @@
+local o = vim.o
+o.expandtab = true
+o.smartindent = true
+o.tabstop = 2
+o.shiftwidth = 2
+
+-- Linux clipboard
+  -- On Linux, you have essentially two clipboards: one is pretty much the same as in the other OSes (CtrlC and CtrlV in other programs, mapped to register + in Vim), the other is the "selection" clipboard (mapped to register * in Vim).
+  -- Using only unnamedplus on Linux, Windows and Mac OS X allows you to:
+  -- CtrlC in other programs and put in Vim with p on all three platforms,
+  -- yank in Vim with y and CtrlV in other programs on all three platforms.
+  -- If you also want to use Linux's "selection" clipboard, you will also need unnamed.
+vim.opt.clipboard:append { 'unnamed', 'unnamedplus' }
